@@ -1,0 +1,51 @@
+# Simple-interest-calculator-using-javascript
+Simple interest can be calculated by using rate and amount using javascript.
+<html>
+    <head>
+	<title>Web App for Simple Interest Calculation</title>
+    <script type="text/javascript" src="script.js"></script>
+
+    <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <h1 align="center">Simple Interest Calculator</h1>
+<div>
+        Amount: <input id="p"><br/>
+        Rate: <input id="r"><br/>
+        No. of Years: <input id="n"><br/>
+
+        <button onclick="calculate()">Calculate</button>
+
+        <p id="result"></p>
+		</div>
+    </body>
+</html> 
+function calculate()
+            {
+                p = document.getElementById("p").value;
+                n = document.getElementById("n").value;
+                r = document.getElementById("r").value;
+                result = document.getElementById("result");
+
+                result.innerHTML = "The interest is " + (p*n*r/100);
+            } 
+            body {
+background-color:blue;
+}
+h1 {
+	background-color:green;
+	font-size:52;
+}
+div {
+	background-color:yellow;
+	font-size:32;
+	font-family:sans-serif;
+}
+p {
+	background-color: white;
+	color:black;
+}
+button {
+	font-size: 30;
+} 
